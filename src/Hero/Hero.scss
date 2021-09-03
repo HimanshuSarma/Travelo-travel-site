@@ -1,0 +1,106 @@
+.hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://media.cntraveler.com/photos/5fd43196b405c65ac7294577/master/w_4387,h_2982,c_limit/533554773');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(1rem, 1fr);
+    grid-template-areas: "... hero-container ...";
+    margin-bottom: 5rem;
+    &-container {
+        grid-area: hero-container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-wrapper {
+            margin-bottom: 1.245rem;
+            &>* {
+                color: var(--color-white);
+                opacity: 0.8;
+            }
+            max-width: 30rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-header {
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        &-text {
+            text-align: center;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.6;
+            padding: 0 0.5rem;
+        }
+        &-btns {
+            width: 100%;
+            padding: 1rem 1rem;
+            background-color: var(--color-white);
+            opacity: 0.7;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            row-gap: 1rem;
+            &-wrapper1 {
+                row-gap: 0.2rem;
+            }
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                &>*:not(:last-child) {
+                    margin-right: 1rem;
+                }
+                &-input {
+                    display: flex;
+                    column-gap: 0.2rem;
+                    & svg {
+                        width: 1rem;
+                        height: 100%;
+                        fill: var(--color-light-grey);
+                    }
+                    & input::placeholder {
+                        font-size: 0.75rem;
+                    }
+                    & input:focus {
+                        outline: none;
+                    }
+                }
+                & p {
+                    margin: 0;
+                    color: black;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                & input {
+                    border: none;
+                    background-color: transparent;
+                }
+                & span {
+                    display: inline-block;
+                    font-size: 0.725rem;
+                    color: var(--color-light-grey2);
+                }
+                & button {
+                    border: none;
+                    background-color: var(--color-primary-dark-blue2);
+                    padding: 0.6rem 1.5rem;
+                    border-radius: 5px;
+                    color: var(--color-white);
+                    font-size: 0.833333rem;
+                    &:hover {
+                        background-color: var(--color-primary-dark-blue3);
+                    }
+                }
+            }
+        }
+    }
+}

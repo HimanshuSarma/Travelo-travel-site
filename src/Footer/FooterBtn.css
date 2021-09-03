@@ -1,0 +1,10 @@
+.footer-btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.825rem;
+}
+
+.footer-btn:not(:last-of-type) {
+    margin-right: 1rem;
+}

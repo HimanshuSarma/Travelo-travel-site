@@ -1,0 +1,12 @@
+.dark-blue-btns {
+    border: none;
+    background-color: var(--color-primary-dark-blue1);
+    color: var(--color-white);
+    padding: 0 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: background-color 200ms;
+    &:hover {
+        background-color: var(--color-primary-dark-blue2);
+    }
+}

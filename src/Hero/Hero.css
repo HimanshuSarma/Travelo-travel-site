@@ -1,0 +1,169 @@
+.hero {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("https://media.cntraveler.com/photos/5fd43196b405c65ac7294577/master/w_4387,h_2982,c_limit/533554773");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://media.cntraveler.com/photos/5fd43196b405c65ac7294577/master/w_4387,h_2982,c_limit/533554773");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(1rem, 1fr);
+      grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(1rem, 1fr);
+      grid-template-areas: "... hero-container ...";
+  margin-bottom: 5rem;
+}
+
+.hero-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hero-container;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container-wrapper {
+  margin-bottom: 1.245rem;
+  max-width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container-wrapper > * {
+  color: var(--color-white);
+  opacity: 0.8;
+}
+
+.hero-container-header {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.hero-container-text {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0 0.5rem;
+}
+
+.hero-container-btns {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: var(--color-white);
+  opacity: 0.7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.hero-container-btns-wrapper1 {
+  row-gap: 0.2rem;
+}
+
+.hero-container-btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero-container-btns-wrapper > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hero-container-btns-wrapper-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+
+.hero-container-btns-wrapper-input svg {
+  width: 1rem;
+  height: 100%;
+  fill: var(--color-light-grey);
+}
+
+.hero-container-btns-wrapper-input input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.hero-container-btns-wrapper-input input:-ms-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.hero-container-btns-wrapper-input input::-ms-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.hero-container-btns-wrapper-input input::placeholder {
+  font-size: 0.75rem;
+}
+
+.hero-container-btns-wrapper-input input:focus {
+  outline: none;
+}
+
+.hero-container-btns-wrapper p {
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero-container-btns-wrapper input {
+  border: none;
+  background-color: transparent;
+}
+
+.hero-container-btns-wrapper span {
+  display: inline-block;
+  font-size: 0.725rem;
+  color: var(--color-light-grey2);
+}
+
+.hero-container-btns-wrapper button {
+  border: none;
+  background-color: var(--color-primary-dark-blue2);
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 0.833333rem;
+}
+
+.hero-container-btns-wrapper button:hover {
+  background-color: var(--color-primary-dark-blue3);
+}
+/*# sourceMappingURL=Hero.css.map */

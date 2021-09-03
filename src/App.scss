@@ -1,0 +1,8 @@
+@import './Components/Main-grid.scss';
+@import './Components/buttons.scss';
+.App {
+    grid-template-areas: "... app-container ...";
+    &-container {
+        grid-area: app-container;
+    }
+}

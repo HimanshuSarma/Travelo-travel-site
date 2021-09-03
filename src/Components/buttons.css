@@ -1,0 +1,15 @@
+.dark-blue-btns {
+  border: none;
+  background-color: var(--color-primary-dark-blue1);
+  color: var(--color-white);
+  padding: 0 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.dark-blue-btns:hover {
+  background-color: var(--color-primary-dark-blue2);
+}
+/*# sourceMappingURL=buttons.css.map */

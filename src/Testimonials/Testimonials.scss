@@ -1,0 +1,98 @@
+.testimonials {
+    margin-bottom: 8rem;
+    &-heading {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "wrapper1 wrapper2";
+        grid-column-gap: 2rem;
+        &-wrapper1 {
+            grid-area: wrapper1;
+        }
+        &-wrapper2 {
+            grid-area: wrapper2;
+        }
+        &-wrapper {
+            position: relative;
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            grid-template-rows: 1fr auto;
+            box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            &-text {
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            &-avatar {
+                grid-column: 1/-1;
+                display: flex;
+                align-items: center;
+                & img {
+                    width: 4rem;
+                    margin-right: 1rem;
+                }
+                &-name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    & p {
+                        margin: 0;
+                    }
+                    & p:first-of-type {
+                        margin-bottom: 0.2rem;
+                    }
+                    &-username {
+                        font-size: 1rem;
+                    }
+                    &-designation {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 0.8rem;
+                        color: var(--color-light-grey2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 53.75em) {
+    .testimonials-container {
+        grid-template-columns: 100%;
+        grid-template-areas: "wrapper1" "wrapper2";
+        grid-column-gap: 0;
+        grid-row-gap: 4rem;
+        margin-left: 3rem;
+        &-wrapper {
+            &-text {
+                max-width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 23.75em) {
+    .testimonials-container {
+        margin-left: 2rem;
+        &-wrapper {
+            &-text {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 20.3125em) {
+    .testimonials-container {
+        margin-left: 0.7rem;
+        &-wrapper {
+            &-text {
+                max-width: 80%;
+            }
+        }
+    }
+}

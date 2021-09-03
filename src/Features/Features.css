@@ -1,0 +1,91 @@
+.features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1rem, 1fr) minmax(0, 90%) minmax(1rem, 1fr);
+      grid-template-columns: minmax(1rem, 1fr) minmax(0, 90%) minmax(1rem, 1fr);
+      grid-template-areas: "... container ...";
+  margin-bottom: 8rem;
+}
+
+.features-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: container;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  justify-self: center;
+  -webkit-box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.04);
+          box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.features-wrapper > * {
+  margin-left: 1rem;
+}
+
+.features-wrapper-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-light-grey-1);
+  border-radius: 10px;
+}
+
+.features-wrapper-heading {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: var(--color-light-grey3);
+}
+
+.features-wrapper p {
+  font-size: 1rem;
+  color: var(--color-light-grey2);
+}
+
+@media only screen and (max-width: 68.75em) {
+  .features-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 49.0625em) {
+  .features {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 90%) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 90%) minmax(0, 1fr);
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .features-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .features-wrapper {
+    max-width: 75%;
+    justify-self: flex-start;
+  }
+}
+/*# sourceMappingURL=Features.css.map */
