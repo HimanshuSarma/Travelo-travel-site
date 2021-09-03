@@ -5,7 +5,7 @@ import PlansArr from './PlansArr';
 import HolidayPlansArr from './HolidayPlans';
 import GroupToursArr from './GroupTours';
 import LongTermPlansArr from './LongTermPlans';
-import {Link, Switch, Route, NavLink} from 'react-router-dom';
+import { Switch, Route, NavLink} from 'react-router-dom';
 
 
 
